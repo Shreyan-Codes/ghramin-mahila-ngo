@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ghramin Mahila (ग्रामीण महिला) — Premium Bilingual NGO Website
+
+A production-ready, high-conversion bilingual (Nepali & English) website for **Ghramin Mahila** (ग्रामीण महिला), a well-established nonprofit working for Madhesi women, children, and marginalized communities in Siraha District, Madhesh Province, Nepal for over 30 years.
+
+---
+
+## Technical Stack
+
+- **Framework**: Next.js 16 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS v4 (CSS-first `@theme` design tokens) & Vanilla CSS
+- **i18n**: `next-intl` with language-based routing (`/ne/`, `/en/`) & default Nepali locale
+- **Icons**: Lucide React + Clean Inline Brand SVGs
+- **Animations**: Framer Motion & Restrained CSS Transitions (Respects `prefers-reduced-motion`)
+
+---
+
+## Features
+
+- **100% Bilingual**: Complete Nepali (नेपाली) and English experience with persistent language switcher.
+- **Madhesh & Mithila Visual Identity**: Palette inspired by Madhesh (#7B2431 Deep Maroon, #C96145 Terracotta, #D7A43B Mustard Gold, #263A5F Indigo, #FCF8F1 Warm Ivory).
+- **13 Homepage Sections**: Hero, Impact Snapshot, Intro with Timeline, 6 Program Cards, Featured Story Placeholder, Why Our Work Matters, Key Achievements, 30-Year Journey Vertical Timeline, Get Involved, Transparency, Partners, Final CTA, and Footer.
+- **15+ Public Pages**: Home, About Us, Programs, Program Details (6 subpages), Impact, Stories, News & Events, Get Involved, Donate, Contact, Gallery, Transparency, Privacy Policy, Safeguarding, Terms.
+- **Static SSG Optimization**: All 44 bilingual pages static-prerendered at build time for extreme performance.
+- **WCAG 2.2 AA Accessibility**: Semantic HTML, skip-to-content link, focus-visible states, keyboard navigation, minimum 48px touch targets.
+- **Ethical Storytelling**: No pity-based messaging, no fake numbers, names, or logos; clear consent placeholders.
+
+---
 
 ## Getting Started
 
-First, run the development server:
+### Installation
+
+```bash
+npm install
+```
+
+### Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Production Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## Documentation & Guides
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [Content Editing Guide](docs/content-guide.md)
+- [Deployment Instructions](docs/deployment.md)
+- [Pre-Launch Checklist](docs/pre-launch-checklist.md)
