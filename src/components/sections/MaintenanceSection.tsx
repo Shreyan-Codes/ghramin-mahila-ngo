@@ -31,26 +31,29 @@ export default function MaintenanceSection({ pageTitle }: MaintenanceSectionProp
           {t('subheading')}
         </p>
 
-        <div className="p-4 bg-[#FCF8F1] rounded-2xl border border-[#EEE5D7] mb-8 w-full max-w-md flex items-center justify-center gap-3 text-[#7B2431] font-semibold text-lg shadow-inner">
-          <PhoneCall className="w-6 h-6 shrink-0" />
-          <span>{t('phoneLabel')}</span>
-        </div>
+        <a 
+          href="tel:9849875540" 
+          className="p-4 bg-[#FCF8F1] hover:bg-[#7B2431]/5 transition-colors rounded-2xl border border-[#EEE5D7] mb-8 w-full max-w-md flex items-center justify-center gap-3 text-[#7B2431] font-bold text-xl shadow-inner"
+        >
+          <PhoneCall className="w-6 h-6 shrink-0 text-[#C96145]" />
+          <span>+977 9849875540</span>
+        </a>
 
         <div className="flex flex-col sm:flex-row gap-4 w-full justify-center">
           <Link
-            href="/contact"
-            className="btn-primary px-8 py-3.5 rounded-full bg-[#7B2431] text-white hover:bg-[#5a1a24] transition-colors font-medium flex items-center justify-center gap-2 shadow-md"
-          >
-            <PhoneCall className="w-4 h-4" />
-            {t('contactCta')}
-          </Link>
-          <Link
             href="/"
-            className="btn-secondary px-8 py-3.5 rounded-full border-2 border-[#7B2431] text-[#7B2431] hover:bg-[#7B2431] hover:text-white transition-colors font-medium flex items-center justify-center gap-2"
+            className="btn-primary px-8 py-3.5 rounded-full bg-[#7B2431] text-white hover:bg-[#5a1a24] transition-colors font-medium flex items-center justify-center gap-2 shadow-md"
           >
             <ArrowLeft className="w-4 h-4" />
             {t('homeCta')}
           </Link>
+          <a
+            href="tel:9849875540"
+            className="btn-secondary px-8 py-3.5 rounded-full border-2 border-[#7B2431] text-[#7B2431] hover:bg-[#7B2431] hover:text-white transition-colors font-medium flex items-center justify-center gap-2"
+          >
+            <PhoneCall className="w-4 h-4" />
+            {locale === 'ne' ? 'फोन गर्नुहोस् (९८४९८७५५४०)' : 'Call Now (9849875540)'}
+          </a>
         </div>
       </div>
     </div>
