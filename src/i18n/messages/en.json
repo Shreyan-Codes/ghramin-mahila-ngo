@@ -27,13 +27,13 @@
   "impact": {
     "title": "Our Impact",
     "years": "30+",
-    "yearsLabel": "Years of Service",
-    "women": "Thousands",
-    "womenLabel": "Women reached through skills and empowerment programs",
-    "girls": "Hundreds",
-    "girlsLabel": "Girls supported in continuing their education",
-    "communities": "Dozens",
-    "communitiesLabel": "Rural communities reached through awareness and health initiatives"
+    "yearsLabel": "Years of Continuous Service",
+    "women": "12,000+",
+    "womenLabel": "People Connected & Reached",
+    "girls": "500+",
+    "girlsLabel": "Programs Successfully Conducted",
+    "communities": "30+",
+    "communitiesLabel": "Years of Proven Community Leadership"
   },
   "intro": {
     "title": "About Us",
@@ -166,9 +166,9 @@
     "quickLinks": "Quick Links",
     "programs": "Programs",
     "contactTitle": "Contact",
-    "address": "[Official Address, Siraha, Madhesh Province]",
-    "phone": "[Phone Number]",
-    "email": "[Official Email]",
+    "address": "Siraha District, Madhesh Province, Nepal",
+    "phone": "+977 9849875540",
+    "email": "info@ghraminmahila.org.np",
     "newsletter": "Newsletter",
     "newsletterDesc": "Stay updated with our activities and news.",
     "subscribe": "Subscribe",
@@ -177,6 +177,14 @@
     "safeguarding": "Safeguarding Policy",
     "terms": "Terms of Service",
     "copyright": "© {year} Ghramin Mahila. All rights reserved."
+  },
+  "maintenance": {
+    "title": "Under Maintenance",
+    "heading": "This Page Is Currently Being Updated",
+    "subheading": "We are currently digitizing verified organization records, reports, and media archives. Please contact us directly for official inquiries.",
+    "phoneLabel": "Official Phone: 9849875540",
+    "contactCta": "Go to Contact Page",
+    "homeCta": "Return to Homepage"
   },
   "about": {
     "title": "About Us",

@@ -85,15 +85,15 @@ export default function Footer() {
               <ul className="flex flex-col gap-3">
                 <li className="flex items-start gap-3">
                   <MapPin className="w-5 h-5 text-[#D7A43B] shrink-0 mt-0.5" />
-                  <span className="text-sm leading-relaxed">[PLACEHOLDER_ADDRESS], Siraha, Madhesh Province, Nepal</span>
+                  <span className="text-sm leading-relaxed">{t('address')}</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <Phone className="w-5 h-5 text-[#D7A43B] shrink-0" />
-                  <span className="text-sm">[PLACEHOLDER_PHONE]</span>
+                  <a href="tel:9849875540" className="text-sm hover:text-[#D7A43B] transition-colors">{t('phone')}</a>
                 </li>
                 <li className="flex items-center gap-3">
                   <Mail className="w-5 h-5 text-[#D7A43B] shrink-0" />
-                  <span className="text-sm">[PLACEHOLDER_EMAIL]</span>
+                  <a href="mailto:info@ghraminmahila.org.np" className="text-sm hover:text-[#D7A43B] transition-colors">{t('email')}</a>
                 </li>
               </ul>
             </div>
