@@ -1,6 +1,6 @@
-# Ghramin Mahila (ग्रामीण महिला) — Premium Bilingual NGO Website
+# ग्रामीण महिला कल्याण सेवा केन्द्र — Gramin Mahila Kalyan Sewa Kendra
 
-A production-ready, high-conversion bilingual (Nepali & English) website for **Ghramin Mahila** (ग्रामीण महिला), a well-established nonprofit working for Madhesi women, children, and marginalized communities in Siraha District, Madhesh Province, Nepal for over 30 years.
+Bilingual (Nepali & English) website for **Gramin Mahila Kalyan Sewa Kendra**, a community organization based in Dhangadhimai Municipality–11, Siraha District, Madhesh Province, Nepal, working with women, children, and marginalized families for over 30 years.
 
 ---
 
@@ -8,42 +8,62 @@ A production-ready, high-conversion bilingual (Nepali & English) website for **G
 
 - **Framework**: Next.js 16 (App Router)
 - **Language**: TypeScript
-- **Styling**: Tailwind CSS v4 (CSS-first `@theme` design tokens) & Vanilla CSS
-- **i18n**: `next-intl` with language-based routing (`/ne/`, `/en/`) & default Nepali locale
-- **Icons**: Lucide React + Clean Inline Brand SVGs
-- **Animations**: Framer Motion & Restrained CSS Transitions (Respects `prefers-reduced-motion`)
+- **Styling**: Tailwind CSS v4 (CSS-first `@theme` design tokens)
+- **i18n**: `next-intl` with locale-prefixed routing (`/ne/`, `/en/`), default locale Nepali
+- **Icons**: Lucide React
+- **Animations**: Framer Motion (respects `prefers-reduced-motion`)
 
 ---
 
-## Features
+## Site Structure
 
-- **100% Bilingual**: Complete Nepali (नेपाली) and English experience with persistent language switcher.
-- **Madhesh & Mithila Visual Identity**: Palette inspired by Madhesh (#7B2431 Deep Maroon, #C96145 Terracotta, #D7A43B Mustard Gold, #263A5F Indigo, #FCF8F1 Warm Ivory).
-- **13 Homepage Sections**: Hero, Impact Snapshot, Intro with Timeline, 6 Program Cards, Featured Story Placeholder, Why Our Work Matters, Key Achievements, 30-Year Journey Vertical Timeline, Get Involved, Transparency, Partners, Final CTA, and Footer.
-- **15+ Public Pages**: Home, About Us, Programs, Program Details (6 subpages), Impact, Stories, News & Events, Get Involved, Donate, Contact, Gallery, Transparency, Privacy Policy, Safeguarding, Terms.
-- **Static SSG Optimization**: All 44 bilingual pages static-prerendered at build time for extreme performance.
-- **WCAG 2.2 AA Accessibility**: Semantic HTML, skip-to-content link, focus-visible states, keyboard navigation, minimum 48px touch targets.
-- **Ethical Storytelling**: No pity-based messaging, no fake numbers, names, or logos; clear consent placeholders.
+**Homepage** (`/ne`, `/en`) — the only fully built page:
+
+1. Hero with real programme photograph
+2. Impact snapshot — 30+ years, 12,000+ people reached, 500+ programs conducted
+3. About the organization
+4. Six programme areas
+5. Photo gallery from recent programmes
+6. Why our work matters
+7. Key achievements
+8. Work with us (volunteer / partner / support)
+9. Closing call to action
+
+**Placeholder pages** — these routes exist and render a maintenance notice with the office phone number until verified content is supplied: `/about`, `/programs`, `/programs/[slug]`, `/contact`, `/gallery`, `/transparency`, `/privacy-policy`, `/safeguarding`, `/terms`.
+
+---
+
+## Content
+
+All site copy lives in two files:
+
+- Nepali: `src/i18n/messages/ne.json`
+- English: `src/i18n/messages/en.json`
+
+Both files must keep the same key structure. See [`docs/content-guide.md`](docs/content-guide.md).
+
+Photographs are in `public/images/` — all are original photographs from the organization's own programmes.
+
+---
+
+## Contact Details Used on the Site
+
+- **Phone**: +977 9849875540
+- **Address**: Dhangadhimai Municipality–11, Siraha District, Madhesh Province, Nepal
+
+Both are set in the `footer` and `org` sections of the translation files.
 
 ---
 
 ## Getting Started
 
-### Installation
-
 ```bash
 npm install
 ```
 
-### Development Server
-
 ```bash
 npm run dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) in your browser.
-
-### Production Build
 
 ```bash
 npm run build
@@ -51,8 +71,10 @@ npm run build
 
 ---
 
-## Documentation & Guides
+## Still To Do
 
-- [Content Editing Guide](docs/content-guide.md)
-- [Deployment Instructions](docs/deployment.md)
-- [Pre-Launch Checklist](docs/pre-launch-checklist.md)
+- [ ] Official registration number for the `/transparency` page
+- [ ] Real content for About, Programs, and Contact pages
+- [ ] Official email address (currently phone only)
+- [ ] Written consent records for photographs showing identifiable people, especially children
+- [ ] Bank details, if the organization decides to accept online donations

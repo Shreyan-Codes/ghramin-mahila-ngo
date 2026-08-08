@@ -1,4 +1,4 @@
-# NGO Content Editing Guide — Ghramin Mahila (ग्रामीण महिला)
+# NGO Content Editing Guide — Gramin Mahila Kalyan Sewa Kendra (ग्रामीण महिला कल्याण सेवा केन्द्र)
 
 This guide explains how NGO staff can edit and manage website content, translations, programs, and documents.
 
@@ -20,7 +20,7 @@ Open `src/i18n/messages/ne.json` (for Nepali) or `src/i18n/messages/en.json` (fo
 ### Homepage Headlines & Copy
 ```json
 "hero": {
-  "eyebrow": "मधेसको सेवामा ३०+ वर्ष",
+  "trustBadge": "३० वर्षभन्दा बढीको सामुदायिक सेवा",
   "headline": "मधेसी महिला र बालबालिकाको सशक्तिकरण...",
   "description": "हामी मधेस प्रदेशको सिराहा जिल्लामा..."
 }
@@ -43,11 +43,14 @@ Open `src/i18n/messages/ne.json` (for Nepali) or `src/i18n/messages/en.json` (fo
 
 ## 3. Adding Real Photographs
 
-Currently, the site uses styled placeholders marked `[Photo Placeholder]`.
+The homepage uses original photographs from the organization's own programmes, stored in `public/images/`.
 
-To add real, consent-verified photographs:
-1. Place optimized `.jpg` or `.webp` image files inside `public/images/`
-2. Update the `src` attribute of `<Image>` or `<img>` components in the relevant section files.
+To add or replace a photograph:
+1. Resize it to about 1200px wide and save it as `.jpg` inside `public/images/`
+2. For the gallery strip, add the filename to `GALLERY_IMAGES` in `src/app/[locale]/page.tsx` and add a matching caption at the same position in `gallery.captions` in **both** `ne.json` and `en.json`.
+3. For the hero or About photo, change the `src` of the `<Image>` in `src/app/[locale]/page.tsx`.
+
+Captions are also used as the image `alt` text, so write them descriptively.
 
 ---
 

@@ -1,50 +1,47 @@
 {
+  "org": {
+    "name": "Gramin Mahila Kalyan Sewa Kendra",
+    "shortName": "Gramin Mahila Kalyan Sewa Kendra",
+    "tagline": "Dhangadhimai Municipality–11, Siraha, Nepal"
+  },
   "metadata": {
-    "title": "Ghramin Mahila — Empowering Madhesi Women and Children",
-    "description": "Working alongside women, children, and marginalized communities in Siraha District, Madhesh Province, Nepal for over 30 years to advance dignity, rights, and sustainable development."
+    "title": "Gramin Mahila Kalyan Sewa Kendra — Siraha, Nepal",
+    "description": "A community organization working alongside women, children, and marginalized families in Dhangadhimai Municipality, Siraha District, Madhesh Province for over 30 years."
   },
   "nav": {
     "home": "Home",
     "about": "About Us",
     "programs": "Our Programs",
-    "impact": "Our Impact",
-    "stories": "Stories",
-    "news": "News & Events",
-    "getInvolved": "Get Involved",
     "contact": "Contact",
-    "donate": "Donate",
+    "support": "Support Us",
     "gallery": "Gallery",
     "transparency": "Transparency"
   },
   "hero": {
-    "eyebrow": "Serving Madhesh for Over 30 Years",
-    "headline": "Three Decades of Empowering Madhesi Women and Children Through Education and Development",
-    "description": "We work alongside women, children, and marginalized communities in Siraha to advance dignity, rights, opportunity, and sustainable development.",
+    "headline": "Three Decades Alongside the Women and Children of Madhesh",
+    "description": "We work with women, children, and marginalized families in Dhangadhimai Municipality and across Siraha District to advance dignity, rights, opportunity, and lasting development.",
     "ctaPrimary": "Explore Our Work",
-    "ctaSecondary": "Support Our Mission",
-    "trustBadge": "30+ Years of Community Service"
+    "ctaSecondary": "Get in Touch",
+    "trustBadge": "30+ Years of Community Service",
+    "imageCaption": "Community awareness gathering in Dhangadhimai, Siraha"
   },
   "impact": {
     "title": "Our Impact",
-    "years": "30+",
-    "yearsLabel": "Years of Continuous Service",
-    "women": "12,000+",
-    "womenLabel": "People Connected & Reached",
-    "girls": "500+",
-    "girlsLabel": "Programs Successfully Conducted",
-    "communities": "30+",
-    "communitiesLabel": "Years of Proven Community Leadership"
+    "metrics": [
+      { "value": "30+", "label": "Years of continuous service" },
+      { "value": "12,000+", "label": "People reached and connected" },
+      { "value": "500+", "label": "Programs conducted" }
+    ]
   },
   "intro": {
     "title": "About Us",
-    "description": "We are a leading nongovernmental organization that has been actively working for the upliftment of women, children, and marginalized communities in Siraha District, Madhesh Province for over 30 years. Since our establishment, we have been conducting various development and awareness programs for the social, economic, and political empowerment of Madhesi women as well as for the bright future of children.",
+    "description": "Gramin Mahila Kalyan Sewa Kendra is a community organization that has worked for the upliftment of women, children, and marginalized families in Siraha District, Madhesh Province for over 30 years. Since our founding we have run awareness, health, education, and skills programs for the social, economic, and political empowerment of Madhesi women, and for the future of their children.",
     "ctaLink": "Learn About Our Journey"
   },
   "programs": {
     "title": "Our Programs",
-    "subtitle": "We run diverse programs for the upliftment of Madhesi communities.",
+    "subtitle": "Six areas of work, run in partnership with the communities of Siraha.",
     "learnMore": "Learn More",
-    "supportProgram": "Support This Program",
     "items": {
       "women-empowerment": {
         "title": "Women Empowerment",
@@ -78,19 +75,17 @@
       }
     }
   },
-  "story": {
-    "title": "Impact Story",
-    "subtitle": "The impact our programs have made in the community",
-    "readMore": "Read the Full Story",
-    "placeholder": "An approved, consent-verified real impact story will be published here.",
-    "categories": {
-      "womenLeadership": "Women's Leadership",
-      "economicEmpowerment": "Economic Empowerment",
-      "education": "Education",
-      "health": "Health",
-      "childDevelopment": "Child Development",
-      "advocacy": "Advocacy and Justice"
-    }
+  "gallery": {
+    "title": "From Our Work",
+    "subtitle": "Photographs from recent programs in Dhangadhimai and across Siraha District.",
+    "captions": [
+      "Cancer awareness program for women, Siraha",
+      "Public awareness program with local representatives",
+      "School outreach with children in Siraha",
+      "Distribution of clothing and school materials",
+      "Community relief distribution",
+      "Meeting children during a school visit"
+    ]
   },
   "challenges": {
     "title": "Why Our Work Matters",
@@ -117,71 +112,44 @@
       "Health and education awareness programs have made a positive impact in communities."
     ]
   },
-  "timeline": {
-    "title": "Our 30-Year Journey",
-    "items": [
-      { "year": "[Founding Year]", "title": "Establishment", "description": "Community service begins in Siraha" },
-      { "year": "[Year]", "title": "Early Community Campaigns", "description": "Women's awareness and literacy campaigns launched" },
-      { "year": "[Year]", "title": "Expansion of Women's Groups", "description": "Dozens of women's savings groups formed" },
-      { "year": "[Year]", "title": "Health and Education Initiatives", "description": "Health camps and girls' education programs expanded" },
-      { "year": "[Year]", "title": "Vocational Training Growth", "description": "Sewing, handicraft, and agriculture training programs started" },
-      { "year": "[Year]", "title": "Advocacy Campaigns", "description": "Campaigns against child marriage, dowry, and gender-based violence" },
-      { "year": "Present", "title": "Current Programs", "description": "Active across 6 major program areas" },
-      { "year": "Future", "title": "Future Vision", "description": "Digital literacy and innovative program expansion" }
-    ]
-  },
-  "getInvolved": {
-    "title": "Get Involved",
-    "description": "Your small contribution can bring a big change in the lives of women and children in Madhesh. We warmly invite you to join us as a volunteer, donor, or partner organization.",
+  "support": {
+    "title": "Work With Us",
+    "description": "Your time, skills, or support can make a real difference in the lives of women and children in Siraha. Call us on 9849875540 to talk about any of the following.",
     "volunteer": {
       "title": "Volunteer",
       "description": "Bring change to the community with your time and skills."
     },
     "partner": {
       "title": "Partner With Us",
-      "description": "Strengthen our mission through institutional or corporate partnership."
+      "description": "Strengthen our work through institutional or corporate partnership."
     },
     "donate": {
-      "title": "Donate",
-      "description": "Your financial support transforms the lives of women and children."
-    }
-  },
-  "transparency": {
-    "title": "Transparency and Trust",
-    "registration": "Registration Details",
-    "registrationPlaceholder": "[Registration Number]",
-    "annualReports": "Annual Reports",
-    "auditReports": "Audit Reports",
-    "policies": "Policies",
-    "governance": "Leadership and Governance",
-    "partners": "Partner Organizations"
+      "title": "Support a Program",
+      "description": "Contribute directly to a health camp, training, or scholarship program."
+    },
+    "cta": "Contact Us"
   },
   "cta": {
     "headline": "Together, We Can Build a Future of Dignity, Equality, and Opportunity.",
-    "support": "Support Our Mission",
-    "join": "Get Involved"
+    "support": "Call 9849875540",
+    "join": "Contact Us"
   },
   "footer": {
-    "mission": "Committed to the empowerment, education, and development of Madhesi women and children.",
+    "mission": "Committed to the empowerment, education, and development of women and children in Siraha District, Madhesh Province.",
     "quickLinks": "Quick Links",
     "programs": "Programs",
     "contactTitle": "Contact",
-    "address": "Siraha District, Madhesh Province, Nepal",
+    "address": "Dhangadhimai Municipality–11, Siraha District, Madhesh Province, Nepal",
     "phone": "+977 9849875540",
-    "email": "info@ghraminmahila.org.np",
-    "newsletter": "Newsletter",
-    "newsletterDesc": "Stay updated with our activities and news.",
-    "subscribe": "Subscribe",
-    "emailPlaceholder": "Your email",
     "privacy": "Privacy Policy",
     "safeguarding": "Safeguarding Policy",
     "terms": "Terms of Service",
-    "copyright": "© {year} Ghramin Mahila. All rights reserved."
+    "copyright": "© {year} Gramin Mahila Kalyan Sewa Kendra. All rights reserved."
   },
   "maintenance": {
     "title": "Under Maintenance",
     "heading": "This Page Is Currently Being Updated",
-    "subheading": "We are currently digitizing verified organization records, reports, and media archives. Please contact us directly for official inquiries.",
+    "subheading": "We are preparing verified organization records, reports, and media for publication. Please contact us directly for any official inquiry.",
     "phoneLabel": "Official Phone: 9849875540",
     "contactCta": "Go to Contact Page",
     "homeCta": "Return to Homepage"
@@ -213,19 +181,6 @@
         "communityLeadership": "Community Leadership"
       }
     }
-  },
-  "donate": {
-    "title": "Donate",
-    "subtitle": "Your support makes a real difference in the lives of Madhesi women and children.",
-    "oneTime": "One-Time Donation",
-    "monthly": "Monthly Donation",
-    "programSupport": "Support a Program",
-    "girlsEducation": "Girls' Education",
-    "vocationalTraining": "Women's Vocational Training",
-    "healthCamps": "Health Camps",
-    "generalFund": "General Fund",
-    "bankTransfer": "Bank Transfer",
-    "anonymous": "Donate Anonymously"
   },
   "contact": {
     "title": "Contact Us",

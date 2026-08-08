@@ -10,7 +10,7 @@ This repository is optimized for one-click zero-config deployment on Vercel.
    ```bash
    git init
    git add .
-   git commit -m "Initial release of Ghramin Mahila bilingual NGO website"
+   git commit -m "Initial release of Gramin Mahila Kalyan Sewa Kendra bilingual NGO website"
    git remote add origin <YOUR_GITHUB_REPO_URL>
    git push -u origin main
    ```

@@ -17,12 +17,12 @@ const notoDevanagari = Noto_Sans_Devanagari({
 
 export const metadata: Metadata = {
   title: {
-    template: '%s | ग्रामीण महिला — Ghramin Mahila',
-    default: 'ग्रामीण महिला — Ghramin Mahila',
+    template: '%s | ग्रामीण महिला कल्याण सेवा केन्द्र',
+    default: 'ग्रामीण महिला कल्याण सेवा केन्द्र — Gramin Mahila Kalyan Sewa Kendra',
   },
   description:
-    'मधेसी महिला र बालबालिकाको सशक्तिकरण, शिक्षा र विकासका लागि प्रतिबद्ध तीन दशक। Three decades of empowering Madhesi women and children through education and development.',
-  metadataBase: new URL('https://ghraminmahila.org.np'),
+    'धनगढीमाई नगरपालिका–११, सिराहामा महिला र बालबालिकाको सशक्तिकरण, शिक्षा र विकासका लागि ३० वर्षभन्दा बढी समयदेखि क्रियाशील। A community organization serving women and children in Dhangadhimai–11, Siraha District, Nepal for over 30 years.',
+  metadataBase: new URL('https://ghramin-mahila-ngo.vercel.app'),
 };
 
 export default function RootLayout({
