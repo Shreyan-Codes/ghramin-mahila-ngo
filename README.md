@@ -20,7 +20,7 @@ Bilingual (Nepali & English) website for **Gramin Mahila Kalyan Sewa Kendra**, a
 **Homepage** (`/ne`, `/en`) — the only fully built page:
 
 1. Hero with real programme photograph
-2. Impact snapshot — 30+ years, 12,000+ people reached, 500+ programs conducted
+2. Impact snapshot — 30+ years, 120,000+ people reached, 500+ programs conducted
 3. About the organization
 4. Six programme areas
 5. Photo gallery from recent programmes
