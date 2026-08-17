@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation';
 import { routing, type Locale } from '@/i18n/routing';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
+import BuildingNoticeModal from '@/components/sections/BuildingNoticeModal';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -50,6 +51,7 @@ export default async function LocaleLayout({
           <a href="#main-content" className="skip-to-content">
             {locale === 'ne' ? 'मुख्य सामग्रीमा जानुहोस्' : 'Skip to main content'}
           </a>
+          <BuildingNoticeModal />
           <Header />
           <main id="main-content" className="flex-1">
             {children}
