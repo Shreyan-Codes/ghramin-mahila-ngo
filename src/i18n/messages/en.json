@@ -146,15 +146,6 @@
     "terms": "Terms of Service",
     "copyright": "© {year} Gramin Mahila Kalyan Sewa Kendra. All rights reserved."
   },
-  "buildingNotice": {
-    "badge": "Construction Underway",
-    "title": "We Are Building Our Home",
-    "body": "Our own building is under construction in Dhangadhimai Municipality–11, Siraha. Once it is complete, our trainings, health camps, and children's programs will run from one permanent home of our own.",
-    "imageAlt": "Our building under construction in Dhangadhimai Municipality–11, Siraha",
-    "cta": "Call 9849875540",
-    "continue": "Continue to Site",
-    "close": "Close"
-  },
   "maintenance": {
     "title": "Under Maintenance",
     "heading": "This Page Is Currently Being Updated",
