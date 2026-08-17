@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState, useSyncExternalStore } from 'react';
 import Image from 'next/image';
-import { X } from 'lucide-react';
+import { X, Phone, HardHat } from 'lucide-react';
 
 const SESSION_KEY = 'gmksk-building-notice-seen';
 
@@ -79,21 +79,37 @@ export default function BuildingNoticeModal() {
         </div>
 
         <div className="p-6 sm:p-8 text-center">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-4 rounded-full bg-[#D7A43B]/20 text-[#7B2431] text-xs font-bold uppercase tracking-wider border border-[#D7A43B]/40">
+            <HardHat className="w-4 h-4" />
+            भवन निर्माणाधीन
+          </div>
+
           <h2
             id="building-notice-title"
-            className="text-3xl sm:text-4xl font-bold text-[#7B2431] leading-snug"
+            className="text-2xl sm:text-3xl font-bold text-[#242424] mb-4 leading-tight"
           >
             अब हामी आफ्नै घरमा
           </h2>
 
-          <div className="mithila-divider w-24 h-1 bg-[#D7A43B] mx-auto mt-5 mb-7"></div>
+          <p className="text-[#6C6A67] leading-relaxed mb-7">
+            धनगढीमाई नगरपालिका–११, सिराहामा संस्थाको आफ्नै भवन निर्माणाधीन छ। निर्माण सम्पन्न भएपछि हाम्रा तालिम, स्वास्थ्य शिविर र बालबालिकाका कार्यक्रमहरू आफ्नै स्थायी घरबाट सञ्चालन हुनेछन्।
+          </p>
 
-          <button
-            onClick={close}
-            className="inline-flex items-center justify-center px-8 py-3 min-h-[48px] rounded-full bg-[#7B2431] text-white font-medium hover:bg-[#5a1a24] transition-colors shadow-md"
-          >
-            बन्द गर्नुहोस्
-          </button>
+          <div className="flex flex-col sm:flex-row gap-3 justify-center">
+            <a
+              href="tel:+9779849875540"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3 min-h-[48px] rounded-full bg-[#7B2431] text-white font-medium hover:bg-[#5a1a24] transition-colors shadow-md"
+            >
+              <Phone className="w-4 h-4" />
+              ९८४९८७५५४० मा फोन गर्नुहोस्
+            </a>
+            <button
+              onClick={close}
+              className="inline-flex items-center justify-center px-6 py-3 min-h-[48px] rounded-full border-2 border-[#7B2431] text-[#7B2431] font-medium hover:bg-[#7B2431] hover:text-white transition-colors"
+            >
+              वेबसाइटमा जानुहोस्
+            </button>
+          </div>
         </div>
       </div>
     </div>
