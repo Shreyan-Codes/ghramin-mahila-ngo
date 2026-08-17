@@ -4,25 +4,29 @@ import { useCallback, useEffect, useRef, useState, useSyncExternalStore } from '
 import Image from 'next/image';
 import { X, Phone, HardHat } from 'lucide-react';
 
-const SESSION_KEY = 'gmksk-building-notice-seen';
-
-// The notice is a one-per-browser-session thing, so whether it has already been
-// dismissed lives in sessionStorage rather than in React state. sessionStorage
-// does not exist while rendering on the server, so the server snapshot reports
-// "already seen" and the modal is simply absent from the prerendered HTML.
-const subscribeToSession = () => () => {};
-const hasSeenOnClient = () => sessionStorage.getItem(SESSION_KEY) === '1';
-const hasSeenOnServer = () => true;
+// The notice opens on every page load. Dismissing it is deliberately not
+// persisted anywhere, so a reload brings it straight back.
+//
+// It is kept out of the prerendered HTML on purpose: if it were painted before
+// hydration, the overlay would be on screen while the close button, Escape, and
+// backdrop click were all still dead. On a slow connection that is a modal the
+// visitor cannot get rid of, so it waits for the handlers to be live instead.
+const subscribeToHydration = () => () => {};
+const isHydratedOnClient = () => true;
+const isHydratedOnServer = () => false;
 
 export default function BuildingNoticeModal() {
-  const hasSeen = useSyncExternalStore(subscribeToSession, hasSeenOnClient, hasSeenOnServer);
+  const isHydrated = useSyncExternalStore(
+    subscribeToHydration,
+    isHydratedOnClient,
+    isHydratedOnServer
+  );
   const [isDismissed, setIsDismissed] = useState(false);
   const closeButtonRef = useRef<HTMLButtonElement>(null);
 
-  const isOpen = !hasSeen && !isDismissed;
+  const isOpen = isHydrated && !isDismissed;
 
   const close = useCallback(() => {
-    sessionStorage.setItem(SESSION_KEY, '1');
     setIsDismissed(true);
   }, []);
 
