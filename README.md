@@ -12,6 +12,7 @@ Bilingual (Nepali & English) website for **Gramin Mahila Kalyan Sewa Kendra**, a
 - **i18n**: `next-intl` with locale-prefixed routing (`/ne/`, `/en/`), default locale Nepali
 - **Icons**: Lucide React
 - **Animations**: Framer Motion (respects `prefers-reduced-motion`)
+- **SEO**: Per-page metadata, canonical + `hreflang` alternates, schema.org JSON-LD, generated sitemap and robots.txt — see [`docs/seo.md`](docs/seo.md)
 
 ---
 
@@ -43,6 +44,27 @@ All site copy lives in two files:
 Both files must keep the same key structure. See [`docs/content-guide.md`](docs/content-guide.md).
 
 Photographs are in `public/images/` — all are original photographs from the organization's own programmes.
+
+Titles, meta descriptions and keywords live under the `seo` key in the same two files.
+
+---
+
+## SEO
+
+| | |
+| --- | --- |
+| **Sitemap** | https://ghramin-mahila-ngo.vercel.app/sitemap.xml |
+| **robots.txt** | https://ghramin-mahila-ngo.vercel.app/robots.txt |
+| **Manifest** | https://ghramin-mahila-ngo.vercel.app/manifest.webmanifest |
+
+Set `NEXT_PUBLIC_SITE_URL` once a custom domain is live and every canonical,
+`hreflang`, sitemap and Open Graph URL follows automatically.
+
+The placeholder pages are served `noindex, follow` and kept out of the sitemap
+so they don't compete with the homepage while they hold no real content. Flip
+`indexable` in `src/lib/site.ts` as each one gets published. Full details,
+including the Search Console steps that still need a human, are in
+[`docs/seo.md`](docs/seo.md).
 
 ---
 

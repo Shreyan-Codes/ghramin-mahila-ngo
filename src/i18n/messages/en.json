@@ -8,6 +8,60 @@
     "title": "Gramin Mahila Kalyan Sewa Kendra — Siraha, Nepal",
     "description": "A community organization working alongside women, children, and marginalized families in Dhangadhimai Municipality, Siraha District, Madhesh Province for over 30 years."
   },
+  "seo": {
+    "keywords": [
+      "Gramin Mahila Kalyan Sewa Kendra",
+      "NGO in Siraha",
+      "Dhangadhimai NGO",
+      "women empowerment Nepal",
+      "Madhesh Province NGO",
+      "child rights Siraha",
+      "vocational training for women Nepal",
+      "women and children NGO Nepal"
+    ],
+    "pages": {
+      "home": {
+        "title": "Gramin Mahila Kalyan Sewa Kendra | NGO in Siraha, Nepal",
+        "description": "Gramin Mahila Kalyan Sewa Kendra has worked with women, children and marginalized families in Dhangadhimai–11, Siraha, Madhesh Province for over 30 years."
+      },
+      "about": {
+        "title": "About Us — 30 Years With Women and Children in Siraha",
+        "description": "The background, vision, mission and values behind 30 years of work with women and children in Siraha District, Madhesh Province, Nepal."
+      },
+      "programs": {
+        "title": "Our Programs — Women, Health, Education and Child Rights",
+        "description": "Six programme areas — women's empowerment, health and nutrition, education, vocational training, advocacy and child development — across Siraha District, Nepal."
+      },
+      "programDetail": {
+        "title": "{program} | Gramin Mahila Kalyan Sewa Kendra",
+        "description": "Our {program} work with women and children in Dhangadhimai Municipality and across Siraha District, Madhesh Province, Nepal."
+      },
+      "gallery": {
+        "title": "Gallery — Our Work Across Siraha District",
+        "description": "Photographs from health camps, school outreach, skills training and relief distribution across Dhangadhimai and Siraha District, Nepal."
+      },
+      "contact": {
+        "title": "Contact Us — Dhangadhimai–11, Siraha, Nepal",
+        "description": "Contact Gramin Mahila Kalyan Sewa Kendra in Dhangadhimai Municipality–11, Siraha. Call +977 9849875540 to volunteer, partner or support a programme."
+      },
+      "transparency": {
+        "title": "Transparency and Accountability | Gramin Mahila Kalyan Sewa Kendra",
+        "description": "Registration details, governance and reporting for Gramin Mahila Kalyan Sewa Kendra, Siraha District, Madhesh Province, Nepal."
+      },
+      "privacy": {
+        "title": "Privacy Policy | Gramin Mahila Kalyan Sewa Kendra",
+        "description": "How Gramin Mahila Kalyan Sewa Kendra collects, uses and protects personal information shared through this website."
+      },
+      "safeguarding": {
+        "title": "Safeguarding Policy | Gramin Mahila Kalyan Sewa Kendra",
+        "description": "Our commitment to the safety and dignity of the women and children we work with in Siraha District, Nepal."
+      },
+      "terms": {
+        "title": "Terms of Service | Gramin Mahila Kalyan Sewa Kendra",
+        "description": "The terms that apply to your use of the Gramin Mahila Kalyan Sewa Kendra website."
+      }
+    }
+  },
   "nav": {
     "home": "Home",
     "about": "About Us",
@@ -28,9 +82,18 @@
   "impact": {
     "title": "Our Impact",
     "metrics": [
-      { "value": "30+", "label": "Years of continuous service" },
-      { "value": "120,000+", "label": "People reached and connected" },
-      { "value": "500+", "label": "Programs conducted" }
+      {
+        "value": "30+",
+        "label": "Years of continuous service"
+      },
+      {
+        "value": "120,000+",
+        "label": "People reached and connected"
+      },
+      {
+        "value": "500+",
+        "label": "Programs conducted"
+      }
     ]
   },
   "intro": {
@@ -46,32 +109,75 @@
       "women-empowerment": {
         "title": "Women Empowerment",
         "summary": "Developing leadership capacity in women, promoting legal literacy, and mobilizing savings and credit for economic self-reliance.",
-        "focusAreas": ["Leadership development", "Legal literacy", "Savings groups", "Access to credit", "Economic independence", "Participation in decision-making"]
+        "focusAreas": [
+          "Leadership development",
+          "Legal literacy",
+          "Savings groups",
+          "Access to credit",
+          "Economic independence",
+          "Participation in decision-making"
+        ]
       },
       "health-nutrition": {
         "title": "Health and Nutrition",
         "summary": "Reproductive health awareness, maternal and child safety, free health camps, and nutrition education in rural areas.",
-        "focusAreas": ["Reproductive health", "Maternal and child health", "Nutrition awareness", "Rural health camps", "Preventive healthcare", "Referral support"]
+        "focusAreas": [
+          "Reproductive health",
+          "Maternal and child health",
+          "Nutrition awareness",
+          "Rural health camps",
+          "Preventive healthcare",
+          "Referral support"
+        ]
       },
       "education-literacy": {
         "title": "Education and Literacy",
         "summary": "School enrollment campaigns for girls, scholarship distribution, and ensuring access to quality education.",
-        "focusAreas": ["Girls' school enrollment", "Scholarships", "Literacy", "School continuation", "Access to quality education", "Support for disadvantaged students"]
+        "focusAreas": [
+          "Girls' school enrollment",
+          "Scholarships",
+          "Literacy",
+          "School continuation",
+          "Access to quality education",
+          "Support for disadvantaged students"
+        ]
       },
       "vocational-training": {
         "title": "Vocational Training",
         "summary": "Skills-based training in sewing, handicrafts, beautician services, and modern agriculture to help women become self-reliant.",
-        "focusAreas": ["Sewing and tailoring", "Handicrafts", "Beautician training", "Modern agriculture", "Entrepreneurship", "Income generation"]
+        "focusAreas": [
+          "Sewing and tailoring",
+          "Handicrafts",
+          "Beautician training",
+          "Modern agriculture",
+          "Entrepreneurship",
+          "Income generation"
+        ]
       },
       "advocacy-justice": {
         "title": "Advocacy and Justice",
         "summary": "Street theatre, legal aid, and advocacy against gender-based violence, child marriage, dowry, and witchcraft accusations.",
-        "focusAreas": ["Gender-based violence prevention", "Campaigns against child marriage", "Campaigns against dowry", "Prevention of witchcraft accusations", "Legal assistance", "Community advocacy", "Street theatre and awareness activities"]
+        "focusAreas": [
+          "Gender-based violence prevention",
+          "Campaigns against child marriage",
+          "Campaigns against dowry",
+          "Prevention of witchcraft accusations",
+          "Legal assistance",
+          "Community advocacy",
+          "Street theatre and awareness activities"
+        ]
       },
       "child-development": {
         "title": "Child Development",
         "summary": "Child-rights protection, reduction of child labor, and recreational and capacity-development programs for children.",
-        "focusAreas": ["Child-rights protection", "Reduction of child labour", "Child participation", "Recreation", "Confidence building", "Capacity development"]
+        "focusAreas": [
+          "Child-rights protection",
+          "Reduction of child labour",
+          "Child participation",
+          "Recreation",
+          "Confidence building",
+          "Capacity development"
+        ]
       }
     }
   },

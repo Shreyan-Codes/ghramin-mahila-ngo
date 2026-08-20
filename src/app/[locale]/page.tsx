@@ -1,17 +1,21 @@
+import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
 import Image from 'next/image';
 import { Heart, Stethoscope, BookOpen, Wrench, Scale, Baby, Users, Handshake, Check, Phone } from 'lucide-react';
 import ImpactCounter from '@/components/sections/ImpactCounter';
 import PhotoGallery from '@/components/sections/PhotoGallery';
+import JsonLd from '@/components/seo/JsonLd';
+import { buildPageMetadata } from '@/lib/seo';
+import { graph, programListSchema, webPageSchema } from '@/lib/structured-data';
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale });
-  return {
-    title: { absolute: t('metadata.title') },
-    description: t('metadata.description'),
-  };
+  return buildPageMetadata({ locale, path: '/', seoKey: 'home' });
 }
 
 const PROGRAMS = [
@@ -52,8 +56,26 @@ export default async function HomePage({
   const galleryCaptions = t.raw('gallery.captions') as string[];
   const photos = GALLERY_IMAGES.map((src, i) => ({ src, caption: galleryCaptions[i] }));
 
+  const pageSchema = graph(
+    webPageSchema({
+      locale,
+      path: '/',
+      name: t('seo.pages.home.title'),
+      description: t('seo.pages.home.description'),
+    }),
+    programListSchema(
+      locale,
+      PROGRAMS.map(({ slug }) => ({
+        slug,
+        name: t(`programs.items.${slug}.title`),
+        description: t(`programs.items.${slug}.summary`),
+      }))
+    )
+  );
+
   return (
-    <main className="min-h-screen bg-[#FCF8F1]">
+    <div className="bg-[#FCF8F1]">
+      <JsonLd data={pageSchema} />
       {/* SECTION 1 - HERO */}
       <section className="relative overflow-hidden pt-12 pb-20 md:pt-20 md:pb-28 bg-gradient-to-b from-[#FCF8F1] via-[#FCF8F1] to-[#EEE5D7]/40">
         <div className="container-custom grid md:grid-cols-2 gap-12 items-center">
@@ -283,6 +305,6 @@ export default async function HomePage({
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

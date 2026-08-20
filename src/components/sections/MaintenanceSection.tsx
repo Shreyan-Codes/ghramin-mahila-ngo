@@ -21,9 +21,10 @@ export default function MaintenanceSection({ pageTitle }: MaintenanceSectionProp
           {pageTitle} — {t('title')}
         </span>
 
-        <h2 className="text-3xl md:text-4xl font-bold text-[#242424] mb-4 leading-tight">
+        {/* Sole <h1> on these pages — every route needs exactly one. */}
+        <h1 className="text-3xl md:text-4xl font-bold text-[#242424] mb-4 leading-tight">
           {t('heading')}
-        </h2>
+        </h1>
 
         <div className="mithila-divider w-24 h-1 bg-[#D7A43B] my-2"></div>
 

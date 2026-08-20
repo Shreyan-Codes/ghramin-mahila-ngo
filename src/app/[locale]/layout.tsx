@@ -1,11 +1,13 @@
 import { Inter, Noto_Sans_Devanagari } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
-import { getMessages, setRequestLocale } from 'next-intl/server';
+import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing, type Locale } from '@/i18n/routing';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import BuildingNoticeModal from '@/components/sections/BuildingNoticeModal';
+import JsonLd from '@/components/seo/JsonLd';
+import { graph, organizationSchema, websiteSchema } from '@/lib/structured-data';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -39,6 +41,14 @@ export default async function LocaleLayout({
 
   setRequestLocale(locale);
   const messages = await getMessages();
+  const t = await getTranslations({ locale });
+
+  // Organization and WebSite nodes are site-wide; individual pages add their
+  // own WebPage / BreadcrumbList nodes that reference them by @id.
+  const siteSchema = graph(
+    organizationSchema(locale, t('metadata.description')),
+    websiteSchema(locale, t('org.name'))
+  );
 
   return (
     <html
@@ -47,6 +57,7 @@ export default async function LocaleLayout({
       suppressHydrationWarning
     >
       <body className="min-h-screen flex flex-col">
+        <JsonLd data={siteSchema} />
         <NextIntlClientProvider messages={messages}>
           <a href="#main-content" className="skip-to-content">
             {locale === 'ne' ? 'मुख्य सामग्रीमा जानुहोस्' : 'Skip to main content'}

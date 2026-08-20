@@ -1,14 +1,43 @@
+import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import MaintenanceSection from '@/components/sections/MaintenanceSection';
+import JsonLd from '@/components/seo/JsonLd';
+import { buildPageMetadata } from '@/lib/seo';
+import { breadcrumbSchema, graph, webPageSchema } from '@/lib/structured-data';
+
+const PATH = '/terms';
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return buildPageMetadata({ locale, path: PATH, seoKey: 'terms' });
+}
 
 export default async function TermsPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations();
 
+  const pageSchema = graph(
+    webPageSchema({
+      locale,
+      path: PATH,
+      name: t('seo.pages.terms.title'),
+      description: t('seo.pages.terms.description'),
+    }),
+    breadcrumbSchema(locale, [
+      { name: t('nav.home'), path: '/' },
+      { name: t('footer.terms'), path: PATH },
+    ])
+  );
+
   return (
-    <main className="pt-8 pb-16">
+    <div className="pt-8 pb-16">
+      <JsonLd data={pageSchema} />
       <MaintenanceSection pageTitle={t('footer.terms')} />
-    </main>
+    </div>
   );
 }
